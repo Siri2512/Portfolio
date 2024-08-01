@@ -138,6 +138,7 @@ body {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap:1.5rem;
+    height:115vh;
 }
 .about-img img{
     padding-bottom: 20%;
@@ -182,6 +183,7 @@ about-text{
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
+  height:"100vh";
 }
 .sub-title span{
   color: darkviolet;
