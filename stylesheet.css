@@ -4,6 +4,18 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Merienda", cursive;
+  #eduction {
+    padding-top: 150px; 
+    margin-top: -70px; 
+}
+#project {
+  padding-top: 100px;
+    margin-top: -70px;
+}
+#contact {
+  padding-top: 100px;
+    margin-top: -70px;  
+}
 }
 body {
   color: white;
@@ -183,7 +195,6 @@ about-text{
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
-  height:"100vh";
 }
 .sub-title span{
   color: darkviolet;
@@ -278,6 +289,7 @@ about-text{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px; /* Adjust the gap between columns */
+  margin-top: 3rem;
 }
 
 #Skills .bar {
