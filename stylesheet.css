@@ -20,6 +20,8 @@
   padding-top: 100px;
     margin-top: -70px;  
 }
+
+
 }
 body {
   color: white;
@@ -657,5 +659,23 @@ about-text{
   font-size:20px;
   padding: 10px;
   border-radius: 0.5em;
+}
+/* Custom Cursor */
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Change cursor size on hover */
+a:hover + .cursor, .btn-box:hover + .cursor {
+  transform: scale(2);
 }
 
