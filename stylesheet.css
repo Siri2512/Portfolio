@@ -660,9 +660,8 @@ about-text{
   padding: 10px;
   border-radius: 0.5em;
 }
-/* Custom Cursor */
 .cursor {
-  position: absolute;
+  position: fixed;
   width: 20px;
   height: 20px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -670,12 +669,12 @@ about-text{
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  z-index: 10000;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.15s ease;
+  z-index: 1000; /* Ensures the cursor stays on top of other elements */
 }
 
-/* Change cursor size on hover */
-a:hover + .cursor, .btn-box:hover + .cursor {
-  transform: scale(2);
+.cursor.hover {
+  transform: scale(1.5);
 }
+
 
