@@ -25,7 +25,7 @@
 }
 body {
   color: white;
-  background: #220f27
+  background: #220f27;
 }
 .header {
   position: fixed;
@@ -379,6 +379,7 @@ about-text{
 .main-text {
   padding-top: 50px;
   margin-top: 50px;
+  align-items: center;
 }
 
 .main-text h2 {
@@ -833,8 +834,10 @@ about-text{
   
   .portfolio-content {
     flex-direction: column;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
+    align-items: center;
+    margin-left: 50px;
   }
 
   .row {
@@ -872,14 +875,35 @@ about-text{
   .project a {
     font-size: 14px;
   }
-
   .eduction-content h2 {
     font-size: 36px;
     margin-left: 520px;
   }
+  .eduction-content-row{
+    
+    margin-left: 50px;
+  }
 .education-row{
-  margin-left: 300px;
+  margin-left: 400px;
 }
+.eduction-row ul {
+  list-style-type: disc; /* Ensures bullet points are displayed */
+  padding-left: 20px; /* Adds indentation for bullet points */
+  margin: 0;
+}
+
+.eduction-row ul li {
+  white-space: nowrap; /* Prevents text wrapping to the next line */
+  margin-bottom: 10px; /* Adds space between bullet points */
+}
+.education-heading {
+  color: darkviolet;
+  white-space: nowrap; /* Prevent text wrapping */
+  text-align: left; /* Optional: Adjust alignment if needed */
+  font-size: 1.5em; /* Adjust font size as required */
+  margin-bottom: 10px; /* Add spacing below the headings */
+}
+
   .contact {
     padding-left: 10px;
     margin-top: 30px;
@@ -908,5 +932,6 @@ about-text{
     padding: 10px 0;
     margin-top: 30px;
   }
+
 }
 
