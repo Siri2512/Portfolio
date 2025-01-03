@@ -686,6 +686,11 @@ about-text{
 }
 
 @media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merienda", cursive;
+}
   .header {
     padding: 10px 5%;
     flex-direction: column;
