@@ -394,6 +394,7 @@ about-text{
 
 .portfolio-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px; /* Adjust the gap between the images as needed */
   margin-top: 40px;
 }
@@ -403,8 +404,8 @@ about-text{
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
-  flex: 1; /* Allow the row to grow and shrink as needed */
-  max-width: calc(33.33% - 20px); /* Ensure three images fit in one row with gap */
+  flex: 0 1 calc(33.33% - 20px); /* Allow the row to grow and shrink as needed */
+ /* Ensure three images fit in one row with gap */
   height: 400px; /* Set a fixed height */
 }
 
